@@ -181,5 +181,15 @@ body{
  .photo {
   height: 80px;
 }
+
+.review-details span {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 13px;
+}
+
+.review {
+  font-size: 13px;
+}
   
 }

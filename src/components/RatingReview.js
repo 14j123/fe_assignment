@@ -12,23 +12,23 @@ export class RatingReview extends Component {
                         <Col lg={8}>
                             <Row className="align-item-center">
                                 <Col xs={1} md={1} lg={1}>5</Col>
-                                <Col xs={11} md={11} lg={11} className="pl-0"><ProgressBar variant="success" now={50} /></Col>
+                                <Col xs={10} md={11} lg={11} className="pl-0"><ProgressBar variant="success" now={50} /></Col>
                             </Row>
                             <Row className="align-item-center">
                                 <Col xs={1} md={1} lg={1}>4</Col>
-                                <Col xs={11} md={11} lg={11} className="pl-0"><ProgressBar now={30} /></Col>
+                                <Col xs={10} md={11} lg={11} className="pl-0"><ProgressBar now={30} /></Col>
                             </Row>
                             <Row className="align-item-center">
                                 <Col xs={1} md={1} lg={1}>3</Col>
-                                <Col xs={11} md={11} lg={11} className="pl-0"><ProgressBar variant="info" now={60} /></Col>
+                                <Col xs={10} md={11} lg={11} className="pl-0"><ProgressBar variant="info" now={60} /></Col>
                             </Row>
                             <Row className="align-item-center">
                                 <Col xs={1} md={1} lg={1}>2</Col>
-                                <Col xs={11} md={11} lg={11} className="pl-0"><ProgressBar variant="warning" now={20} /></Col>
+                                <Col xs={10} md={11} lg={11} className="pl-0"><ProgressBar variant="warning" now={20} /></Col>
                             </Row>
                             <Row className="align-item-center">
                                 <Col xs={1} md={1} lg={1}>1</Col>
-                                <Col xs={11} md={11} lg={11} className="pl-0"><ProgressBar variant="danger" now={10} /></Col>
+                                <Col xs={10} md={11} lg={11} className="pl-0"><ProgressBar variant="danger" now={10} /></Col>
                             </Row>
                         </Col>
                         <Col lg={4} className="text-align-center respond-mt-20">
