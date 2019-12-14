@@ -34,26 +34,28 @@ export class Confirm extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
-                    <AppBar 
-                        showMenuIconButton={false} 
-                        title="Success !"
-                    />
-                    <List>
-                        {listItem}
-                    </List>
-                    <br/>
-                    <RaisedButton
-                        label="Back"
-                        primary={false}
-                        style={style.button}
-                        onClick={this.prev}
-                    />
-                    <RaisedButton
-                        label="Confirm"
-                        primary={true}
-                        style={style.button}
-                        onClick={this.continue}
-                    />
+                    <div className="text-align-center">
+                        <AppBar 
+                            showMenuIconButton={false} 
+                            title="Success !"
+                        />
+                        <List>
+                            {listItem}
+                        </List>
+                        <br/>
+                        <RaisedButton
+                            label="Back"
+                            primary={false}
+                            style={style.button}
+                            onClick={this.prev}
+                        />
+                        <RaisedButton
+                            label="Confirm"
+                            primary={true}
+                            style={style.button}
+                            onClick={this.continue}
+                        />
+                    </div>
                 </React.Fragment>
             </MuiThemeProvider>
         )

@@ -1,0 +1,45 @@
+.profile-header-ctn{
+    border: 1px solid #00BCD4;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.profile-header-top{
+    background-color: #00BCD4;
+    padding: 15px;
+    height: calc(100vh / 4); 
+}
+
+.profile-details-ctn{
+    padding: 40px 0px 20px;
+}
+
+.diveder-lr{
+    border-left: 1px solid #00BCD4;
+    border-right: 1px solid #00BCD4;
+}
+
+.aligned-right{
+    text-align: right;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap
+}
+
+.no-shrink{
+    flex-shrink: 0;
+}
+
+
+.profile-img-ctn{
+    width: 18%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.profile-img{
+    border: 5px solid #00BCD4;
+    width: 100%;
+}
+

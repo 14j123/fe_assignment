@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import FormDetails from './FormDetails';
 import NextDetails from './NextDetails';
 import Confirm from './Confirm';
+import Profile from './Profile';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import data from '../data';
 
@@ -56,13 +57,19 @@ export class DynamicForm extends Component {
     prevStep = () =>{
         const {step} = this.state;
         const {questions} = this.state;
-
-        if(this.state["id" + questions[step - 2].id]){
-            if(this.state["id" + questions[step -2].id].length >= questions[step-2].min_char_length && questions[step-2].is_required){
-                this.setState({
-                    step: step - 1,
-                    nextBtnDisable: false
-                })
+        if(questions[step]){
+            if(this.state["id" + questions[step - 2].id]){
+                if(this.state["id" + questions[step -2].id].length >= questions[step-2].min_char_length && questions[step-2].is_required){
+                    this.setState({
+                        step: step - 1,
+                        nextBtnDisable: false
+                    })
+                }else{
+                    this.setState({
+                        step: step - 1,
+                        nextBtnDisable: true
+                    })
+                }
             }else{
                 this.setState({
                     step: step - 1,
@@ -72,7 +79,6 @@ export class DynamicForm extends Component {
         }else{
             this.setState({
                 step: step - 1,
-                nextBtnDisable: true
             })
         }
     }
@@ -106,14 +112,21 @@ export class DynamicForm extends Component {
 
 
         if(questions.length < step){
-            return(
-                <Confirm
-                    nextStep={this.nextStep}
-                    prevStep={this.prevStep}
-                    questions={questions}
-                    values={this.state}
-                />
-            )
+            if(step == questions.length + 2){
+                return(
+                    <Profile/>
+                )
+            }else{
+                return(
+                    <Confirm
+                        nextStep={this.nextStep}
+                        prevStep={this.prevStep}
+                        questions={questions}
+                        values={this.state}
+                    />
+                )
+            }
+            
         }else{
             
 

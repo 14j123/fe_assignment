@@ -1,0 +1,28 @@
+.gallery1{
+    background-image: url(../images/work1.jpg);
+}
+
+.gallery2{
+    background-image: url(../images/work1.jpg);
+}
+
+.gallery3{
+    background-image: url(../images/work1.jpg);
+}
+
+.photo{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: calc(100% /4 - 10px);
+    height: 130px;
+    margin: 10px 5px;
+
+}
+
+.view-btn{
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border: 1px solid rgba(0,0,0,0.1);
+}

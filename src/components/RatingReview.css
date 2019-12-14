@@ -1,0 +1,57 @@
+.compliment-ctn{
+    display: flex;
+    align-items: center;
+    margin: 8px 15px;
+    padding: 8px !important;
+}
+
+.img-ctn{
+    width:20%;
+}
+
+.review-ctn{
+    display: flex;
+    border-bottom: 2px solid #00BCD4;
+    padding-bottom: 20px;
+    padding-top: 20px;  
+}
+
+.review-divider{
+    border-top: 2px solid #00BCD4;
+    margin-top: 25px;
+}
+
+.review-details span{
+    padding-left:8px;
+    padding-right:8px;
+    font-size: 14px;
+}
+
+.reviewer-name{
+    border-left: 1px solid #00BCD4;
+    border-right: 1px solid #00BCD4;
+    font-weight: 600;
+}
+
+.review{
+    font-size: 14px;
+    padding-left: 8px;
+}
+
+.loadmore-btn-ctn{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+.loadmore-btn-ctn button{
+    width: 50%;
+}
+
+.dropdown button{
+    background-color: #fff !important;
+    color: #000 !important;
+    border:none !important;
+    font-size: 15px;
+
+}

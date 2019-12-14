@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {DynamicForm} from './components/DynamicForm'
+import {DynamicForm} from './components/DynamicForm';
+import {Profile} from './components/Profile';
 import './App.css';
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <DynamicForm/>
+        {/* <Profile /> */}
       </div>
     );
   }

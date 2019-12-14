@@ -4,7 +4,6 @@ import AppBar from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 
-
 export class FormDetails extends Component {
 
     // validate = () =>{
@@ -106,16 +105,17 @@ export class FormDetails extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
-                    <AppBar
-                        showMenuIconButton={false} 
-                        title={title}
-                    />
-                    <br/>
-                    {displayQuestion}
-                    <br/>
-                    {prevBtn}
-                    {nextBtn}
-                    
+                    <div className="text-align-center">
+                        <AppBar
+                            showMenuIconButton={false} 
+                            title={title}
+                        />
+                        <br/>
+                        {displayQuestion}
+                        <br/>
+                        {prevBtn}
+                        {nextBtn}
+                    </div>
                 </React.Fragment>
             </MuiThemeProvider>
         )
